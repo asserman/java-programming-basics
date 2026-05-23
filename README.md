@@ -6,7 +6,7 @@
 ### Программа курса
 
 
-чуточку изменим 
+чуточку изменим еще чуточку
 1. Software Setup
 2. Variables and Data Types
 3. OOP First Look
