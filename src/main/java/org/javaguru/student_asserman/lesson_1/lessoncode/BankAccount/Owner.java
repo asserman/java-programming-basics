@@ -1,4 +1,6 @@
-package org.javaguru.student_asserman.lesson_1.lessoncode;
+package org.javaguru.student_asserman.lesson_1.lessoncode.BankAccount;
+
+import org.javaguru.student_asserman.lesson_1.lessoncode.User;
 
 public class Owner {
     private User user;

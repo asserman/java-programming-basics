@@ -1,4 +1,6 @@
-package org.javaguru.student_asserman.lesson_1.lessoncode;
+package org.javaguru.student_asserman.lesson_1.lessoncode.BankAccount;
+
+import org.javaguru.student_asserman.lesson_1.lessoncode.User;
 
 public class BankAccount {
     private Owner owner;
@@ -14,7 +16,7 @@ public class BankAccount {
     }
 
     public void setAmount(int amount) {
-        this.amount = amount;
+        updateAmount(amount);
     }
 
     public Owner getOwner() {
@@ -25,8 +27,15 @@ public class BankAccount {
         this.owner = owner;
     }
 
-    public int updateAmount(int amount){
-        this.amount+=amount;
+    public int updateAmount(int amount) {
+        int res = this.amount + amount;
+        try {
+            if (res < 0) throw new ArithmeticException();
+            this.amount += amount;
+        } catch (ArithmeticException e) {
+            System.out.printf("отрицательный результат = %d \n", res);
+        }
+
         return amount;
     }
 
